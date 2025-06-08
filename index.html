@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wings API - Modern REST API Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksELDy/WU27fNfthxSjfKV/LTw+Apq/Y/oDzlwM+Z+5J6Kz8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-rocket"></i> <a href="#">Wings API</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#api-list">API List</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="animate-fade-in">
+            <div class="hero-content">
+                <h1 class="animate-slide-up">Unlock Data Power with Wings API</h1>
+                <p class="animate-slide-up delay-1">Seamlessly integrate robust and scalable REST APIs into your applications.</p>
+                <a href="#api-list" class="btn-primary animate-slide-up delay-2">Explore APIs</a>
+            </div>
+        </section>
+
+        <section id="api-list">
+            <h2 class="section-title animate-slide-up">Our Featured APIs</h2>
+            <p class="section-subtitle animate-slide-up delay-1">Discover a wide range of APIs designed for various applications.</p>
+
+            <div class="categories animate-fade-in delay-2">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="search">Search</button>
+                <button class="category-btn" data-category="data">Data Tools</button>
+                <button class="category-btn" data-category="media">Media & Files</button>
+                <button class="category-btn" data-category="utility">Utility</button>
+            </div>
+
+            <div class="api-cards-grid">
+                <!-- Example API Card 1 -->
+                <div class="api-card hidden" data-category="search">
+                    <h3>Product Search API</h3>
+                    <p>Powerful search capabilities for various product catalogs.</p>
+                    <div class="api-meta">
+                        <span class="category-tag search"><i class="fas fa-search"></i> Search</span>
+                    </div>
+                    <a href="#" class="btn-secondary">View Docs</a>
+                </div>
+
+                <!-- Example API Card 2 -->
+                <div class="api-card hidden" data-category="data">
+                    <h3>GeoLocation API</h3>
+                    <p>Precise geographical location data and mapping services.</p>
+                    <div class="api-meta">
+                        <span class="category-tag data"><i class="fas fa-map-marker-alt"></i> Data Tools</span>
+                    </div>
+                    <a href="#" class="btn-secondary">View Docs</a>
+                </div>
+
+                <!-- Example API Card 3 -->
+                <div class="api-card hidden" data-category="media">
+                    <h3>Image Resizer API</h3>
+                    <p>Optimized image resizing and format conversion on the fly.</p>
+                    <div class="api-meta">
+                        <span class="category-tag media"><i class="fas fa-image"></i> Media & Files</span>
+                    </div>
+                    <a href="#" class="btn-secondary">View Docs</a>
+                </div>
+
+                <!-- Example API Card 4 -->
+                <div class="api-card hidden" data-category="utility">
+                    <h3>Text Summarizer API</h3>
+                    <p>Condense lengthy texts into concise summaries automatically.</p>
+                    <div class="api-meta">
+                        <span class="category-tag utility"><i class="fas fa-file-alt"></i> Utility</span>
+                    </div>
+                    <a href="#" class="btn-secondary">View Docs</a>
+                </div>
+
+                <!-- Example API Card 5 -->
+                <div class="api-card hidden" data-category="data">
+                    <h3>Currency Exchange API</h3>
+                    <p>Real-time exchange rates for global currencies.</p>
+                    <div class="api-meta">
+                        <span class="category-tag data"><i class="fas fa-money-bill-wave"></i> Data Tools</span>
+                    </div>
+                    <a href="#" class="btn-secondary">View Docs</a>
+                </div>
+
+                <!-- Example API Card 6 -->
+                <div class="api-card hidden" data-category="media">
+                    <h3>File Uploader API</h3>
+                    <p>Secure and efficient file upload and storage solutions.</p>
+                    <div class="api-meta">
+                        <span class="category-tag media"><i class="fas fa-upload"></i> Media & Files</span>
+                    </div>
+                    <a href="#" class="btn-secondary">View Docs</a>
+                </div>
+
+                <!-- Example API Card 7 -->
+                <div class="api-card hidden" data-category="search">
+                    <h3>Document Search API</h3>
+                    <p>Full-text search capabilities for large document repositories.</p>
+                    <div class="api-meta">
+                        <span class="category-tag search"><i class="fas fa-file-search"></i> Search</span>
+                    </div>
+                    <a href="#" class="btn-secondary">View Docs</a>
+                </div>
+
+                <!-- Example API Card 8 -->
+                <div class="api-card hidden" data-category="utility">
+                    <h3>QR Code Generator API</h3>
+                    <p>Generate custom QR codes for various data types.</p>
+                    <div class="api-meta">
+                        <span class="category-tag utility"><i class="fas fa-qrcode"></i> Utility</span>
+                    </div>
+                    <a href="#" class="btn-secondary">View Docs</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="hidden">
+            <h2 class="section-title">About Wings API</h2>
+            <p class="section-subtitle">Empowering developers with reliable and innovative API solutions.</p>
+            <div class="about-content">
+                <p>Wings API is dedicated to providing high-quality, performant, and secure REST APIs that simplify complex development tasks. Our goal is to accelerate your project timelines and enhance your application's capabilities with robust backend solutions.</p>
+                <p>We focus on clean architecture, comprehensive documentation, and developer-friendly interfaces to ensure a smooth integration experience for all our users.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="hidden">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have questions or need custom API solutions? We're here to help.</p>
+            <div class="contact-content">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@wingsapi.com">info@wingsapi.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: +62 123 4567 890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: Jakarta, Indonesia</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Wings API. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
